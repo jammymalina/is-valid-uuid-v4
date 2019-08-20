@@ -1,7 +1,7 @@
 import 'mocha';
 import { expect } from 'chai';
 
-import isValidUUIDV4 from '../../src/index';
+import { isValidUUIDV4 } from '../../src/index';
 
 describe('isValidUUIDV4', () => {
   describe('Valid uuids', () => {

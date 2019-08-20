@@ -3,4 +3,4 @@ const isValidUUIDV4 = (uuid: string): boolean => {
   return uuidRegex.test(uuid);
 }
 
-export default isValidUUIDV4;
+export { isValidUUIDV4 };
