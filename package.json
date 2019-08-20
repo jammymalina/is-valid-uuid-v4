@@ -4,7 +4,7 @@
   "description": "Checks if the string is valid uuid-v4",
   "main": "dist/index.js",
   "scripts": {
-    "build" : "tsc",
+    "build" : "npm test && tsc",
     "prepare" : "npm run build",
     "prepublishOnly" : "npm test && npm run lint",
     "version": "git add -A src",
