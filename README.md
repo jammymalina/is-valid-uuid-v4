@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/jammymalina/is-valid-uuid-v4.svg?branch=master)](https://travis-ci.com/jammymalina/is-valid-uuid-v4)
+[![Build Status](https://travis-ci.com/jammymalina/is-valid-uuid-v4.svg?branch=master)](https://travis-ci.com/jammymalina/is-valid-uuid-v4) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=is-valid-uuid-v4&metric=coverage)](https://sonarcloud.io/dashboard?id=is-valid-uuid-v4) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=is-valid-uuid-v4&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=is-valid-uuid-v4) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=is-valid-uuid-v4&metric=code_smells)](https://sonarcloud.io/dashboard?id=is-valid-uuid-v4)
 
 # is-valid-uuid-v4
 
