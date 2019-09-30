@@ -3,6 +3,7 @@ node_js:
 - stable
 script:
   - npm run build
+  - npm run coverage
   - sonar-scanner
 dist: trusty
 addons:
