@@ -1,10 +1,10 @@
 {
   "name": "is-valid-uuid-v4",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Checks if the string is valid uuid-v4",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm test && tsc",
+    "build": "rm -rf dist && npm test && tsc",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "version": "git add -A src",
