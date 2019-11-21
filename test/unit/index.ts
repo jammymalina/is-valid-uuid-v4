@@ -1,12 +1,17 @@
 import "mocha";
 import { expect } from "chai";
 
-import { isValidUUIDV4, uuidRegex } from "../../src/index";
+import { isValidUUIDV4, uuidRegex, uuidRegexString } from "../../src/index";
 
 describe("isValidUUIDV4", () => {
   describe("uuidRegex", () => {
     it("uuidRegex should exist", () => {
       expect(uuidRegex).to.exist;
+    });
+
+    it("uuidRegexString should exist", () => {
+      expect(uuidRegexString).to.exist;
+      expect(uuidRegexString).to.be.a("string");
     });
   });
 
