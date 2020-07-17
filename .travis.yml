@@ -2,12 +2,6 @@ language: node_js
 node_js:
 - stable
 script:
-  - npm run build
-  - npm run coverage
-  - sonar-scanner
+- npm run build
+- npm run coverage
 dist: trusty
-addons:
-  sonarcloud:
-    organization: "jammymalina"
-    token:
-      secure: YspvcpuFjPcj8Tfm3Of/QoHDkpv+QrhDYGxHToR3lq0YMrR2o+wpsR0xPp+PxIlwjMAgy4NwQ69W9HlemDrF4I4Y+IWBKlgCzT4c2jK/Bh+bJ+GloUfSa+wZGuJ1Q8LqinIxPF2pTMw3AjgS/+iUZFjwFAsKup0W65qDGJDIPyQOBMJz4HkYnB8WwauYn3tDCqOHpKOsELoZqNKadlf0VjFn7hEl9ryUM4OvQ7aMonxJFqt33oRlJHS6HHFy/capTthecALa2rTaIQgnOdUiyE39lChORsrnUNVmGXELGNnk4eQOZ042IK1RHkljdaonjKFM3zIFwKYCcu1r2ynapqP0HiprdW//cba+GfvcIhk3+XCF5Gt3wolUDQCF6CVW7orLRaAtUu51gGJNn5RqPNia49hhh7+Tfi9m04PtDc7+dFkarVjIM5rj3/VHXz+O9Gbo8rH1kS8luIr7ZIbwwc1FT04Gy5TwN4DEUTSFGbFSr9eIfl5XTb0EGKOhXIG6fUOVBjyBL9AK1EXlSXRjvXhtYqtqRUcm1U1F1YKqscLdz57phPmPnsl4OGrfheUKzMt+pDgoLiW3HwKltBbSxGe1L0Fw0KBxcoynCS2pgva6A0eRkIkmXk0E22quXHs+jbX2E5XnUX4gsnWnoXo55HzwUh3ZK0wmidiGgOWPC8c=
