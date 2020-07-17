@@ -2,12 +2,15 @@ language: node_js
 node_js:
 - stable
 script:
-  - npm run build
-  - npm run coverage
-  - sonar-scanner
+- npm run build
+- npm run coverage
+- sonar-scanner
 dist: trusty
 addons:
   sonarcloud:
-    organization: "jammymalina"
+    organization: jammymalina
     token:
       secure: YspvcpuFjPcj8Tfm3Of/QoHDkpv+QrhDYGxHToR3lq0YMrR2o+wpsR0xPp+PxIlwjMAgy4NwQ69W9HlemDrF4I4Y+IWBKlgCzT4c2jK/Bh+bJ+GloUfSa+wZGuJ1Q8LqinIxPF2pTMw3AjgS/+iUZFjwFAsKup0W65qDGJDIPyQOBMJz4HkYnB8WwauYn3tDCqOHpKOsELoZqNKadlf0VjFn7hEl9ryUM4OvQ7aMonxJFqt33oRlJHS6HHFy/capTthecALa2rTaIQgnOdUiyE39lChORsrnUNVmGXELGNnk4eQOZ042IK1RHkljdaonjKFM3zIFwKYCcu1r2ynapqP0HiprdW//cba+GfvcIhk3+XCF5Gt3wolUDQCF6CVW7orLRaAtUu51gGJNn5RqPNia49hhh7+Tfi9m04PtDc7+dFkarVjIM5rj3/VHXz+O9Gbo8rH1kS8luIr7ZIbwwc1FT04Gy5TwN4DEUTSFGbFSr9eIfl5XTb0EGKOhXIG6fUOVBjyBL9AK1EXlSXRjvXhtYqtqRUcm1U1F1YKqscLdz57phPmPnsl4OGrfheUKzMt+pDgoLiW3HwKltBbSxGe1L0Fw0KBxcoynCS2pgva6A0eRkIkmXk0E22quXHs+jbX2E5XnUX4gsnWnoXo55HzwUh3ZK0wmidiGgOWPC8c=
+env:
+  global:
+    secure: W06dn3ZpKogKN84HgokzJwHZSzXdqlK5xzlHnM+omilk72eJSh4Bw+3+RQEh2N5bOQf6Iwt+Lt7xJM5gPJ7qS2XQbLQz7bs3aCt+Qwa8doWS9pGsJp6+VTIjZTO42rvHZzBHSlAnt750uhvhFoDYfzAmtyjeEo0iN/snR1M8yY1b6DVTBjijiEPH6OdWGnFCcwH7aLo9/Sc2zf/HvAFleECPFgG+swuPJxGylclm+dTRQ1vgvqDKxpXcTiuQb96p8GwRw2yHo9i8uy2+6/gJVtt1MtR/O1OBgkBmNiWWOd7YsN7foHXPiI9WCTNh63aBAyqqw2qS/Dl0Cnwk6jX4DWU8algvMVv6xPuRxfmjrcIy+i2jGNpEhjJQ0ztC9qTOMCV6sZQiTzQUHcDOSRQNzzNM9Yyzk4eA3hr61IpEHXzijRmiY/wAT2XrDS73fyZlrOlYYCXkwZpmqd09RzhPn8AvHmLnNv8RA5eVwqfXLT3ncq+FfCcaizKCfQPY1vOBFtx7stfzf8RPdNyZmCdd9oTKqnuwv8+v2rdffqqCxWShx3XqnjKLJVYCjhLFGBN2oGvDkzxmTIT0XO9Dj3cf+1bCwmLOQ+APJjxesgDJ+Mq4geZPhQKllejHugEo7aUS4TcOM0Kd72JZHVuwdumnKaXJJj9lhY0ntdipXiymjKo=
