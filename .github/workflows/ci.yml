@@ -8,6 +8,12 @@ jobs:
     strategy:
       matrix:
         node: [12, 14, 16, 18]
+        include:
+          - node: 12
+            npm: 8
+          - node: 14
+            npm: 8
+
 
     steps:
       - uses: actions/checkout@v3
@@ -15,6 +21,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
+      - if: ${{ matrix.npm }}
+        run: npm install -g npm@${{ matrix.npm }}
       - run: npm ci
       - run: npm run build
       - run: npm run coverage
@@ -31,7 +39,7 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - run: npm coverage
+      - run: npm run coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
