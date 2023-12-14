@@ -31,6 +31,19 @@ describe("isValidUUIDV4", () => {
     it("should be valid uuid 4", () => {
       expect(isValidUUIDV4("6ffdf7d9-6cd7-4eb8-bde1-afdec2d92a15")).to.be.true;
     });
+
+    it("should determine that all of these combinations are valid", () => {
+      const uuids = [
+        "527218be-a09e-4d0e-86ce-c39d1348d953",
+        "14163389-2eea-4e30-9124-fcf2451eb9fc",
+        "c21b57cc-2a4e-4425-a2f4-129256562599",
+        "37700270-6deb-4a73-bbcd-d47c6e20b567",
+      ];
+
+      for (let i = 0; i < uuids.length; i += 1) {
+        expect(isValidUUIDV4(uuids[i])).to.be.true;
+      }
+    });
   });
 
   describe("Invalid uuids", () => {
@@ -48,6 +61,10 @@ describe("isValidUUIDV4", () => {
 
     it("should not be valid uuid - string resembling uuid v4", () => {
       expect(isValidUUIDV4("821adb8d-79ca-424e-b9f0-fdc8048f07al")).to.be.false;
+    });
+
+    it("should not be valid uuid - it is uuid v5", () => {
+      expect(isValidUUIDV4("d4817bfe-2687-5591-bdc9-2aebfe4c6733")).to.be.false;
     });
   });
 });
