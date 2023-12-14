@@ -6,9 +6,6 @@
   "scripts": {
     "build": "rm -rf dist && npm run lint && npm test && tsc",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "version": "git add -A src",
-    "postversion": "git push && git push --tags",
     "test": "mocha -r ts-node/register test/unit/**/*.ts",
     "coverage": "nyc npm run test",
     "lint": "npx eslint './src/**/*.{ts,tsx}'"
